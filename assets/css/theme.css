@@ -1,0 +1,235 @@
+*{
+	outline: none;
+	box-shadow: none;
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'amsipronarw-regular';
+    margin: 0;
+    padding: 0;
+}
+
+strong,b{
+    font-weight:600;
+}
+img{
+    max-width:100%;
+    height:auto;
+}
+ul,ol{list-style:none;}
+ul{padding:0;margin:0;}
+a{
+    font-family: 'amsipro-semibold';
+	transition:color 0.2s ease-in-out;-moz-transition:color 0.2s ease-in-out;
+-webkit-transition:color 0.2s ease-in-out;-o-transition:color 0.2s ease-in-out;
+}
+a:hover{}
+a,a:hover{text-decoration:none;}
+i{font-size:1.1em; margin: 0 5px;}
+
+h1,h2,h3,h4,h5,h6{
+	font-weight:600;
+	margin:0;
+	color:#294669;
+	font-family: 'amsipro-semibold';
+	}
+h1{font-size:34px !important;line-height:30px;}
+h2{font-size:32px !important;line-height:28px;}
+h3{font-size:28px !important;;line-height:24px;}
+h4{font-size:26px !important;;line-height:22px;}
+h5{font-size:24px !important;;line-height:20px;}
+h6{font-size:22px !important;;line-height:18px;}
+p{
+	color:#444;
+	font-size:16px;
+	line-height:22px;
+	font-weight:300;
+	margin:1% 0;
+	}	p a{
+	color:#444;
+	font-family: 'amsipronarw-regular';
+	}	
+.bg-topo{
+    background:#294669;
+}    
+.container-full{
+    width: 100%;
+    max-width: 100%;
+    display:flex;
+    position: relative;
+}
+.container{
+    width: 1170px;
+    max-width: 100%;
+    display:flex;
+    position: relative;
+    margin: 0 auto;
+}
+
+.pd-tb{
+	padding-top:0.5%;
+	padding-bottom:0.5%;
+}
+.pd-tb-5{
+	padding-top:5%;
+	padding-bottom:5%;
+}
+.space-between{
+	justify-content: space-between !important;
+}
+.column{flex-direction: column !important;}
+.text-center{text-align: center;}
+/*=============================
+HEADER
+======================*/
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items:   center;
+    width: 100%;
+    height: 50px;
+}
+
+.topo .contato{
+    float: left;
+    font-size: 17px;
+    color:#fff;
+    font-family: 'amsipro-xlight';
+}
+.topo .social a{
+    float: right;
+    font-size: 17px;
+    color:#fff;
+}
+
+
+.logo{
+	width: 160px;
+}
+.logo img{
+	width:100%;
+	height: auto;
+}
+
+.menu{
+	display: flex;
+	align-items: center;
+}
+nav{
+	height: 145px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.menu-header ul,
+.menu-header ul li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.menu-header ul li{
+	display: block;
+}
+
+.menu-header ul li a{
+	text-transform: uppercase;
+	color: #294669;
+	font-size: 20px;
+	font-family: amsipronarw-regular;
+	padding: 0 10px;
+}
+
+.menu-header  ul li:after {
+    content: "/";
+    color: #ed7d32;
+}
+
+.menu-header ul li:hover a{
+	color:#ed7d32;
+}
+nav .menu-header ul li.current_page_item{
+
+	
+
+}
+
+.menu-header ul li.current_page_item > a,
+.menu-header ul li.current_page_item > a:hover,
+.menu-header ul li.current-menu-ancestor > a,
+.menu-header ul li.current-menu-item > a,
+.menu-header ul li.current-menu-parent > a,
+.menu-header ul li.current-menu-item:hover > a {
+
+	color:#ed7d32
+}
+
+.menu-header ul li ul{
+width: 147px;
+float: left;
+position:absolute;
+background:#294669;
+padding:0;
+list-style: none;
+display:none;
+top:74px;
+	}
+
+.menu-header ul li:hover ul{
+
+display:block;
+
+	}
+.menu-header ul li:hover ul li{
+	height:40px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	}
+.menu-header ul li:hover ul li a{	
+	padding: 0;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 400;
+	}
+	
+.menu-header ul li:hover ul li:hover{
+	background:#9ac13c;
+	}
+	
+nav .menu-header ul li ul li.current_page_item{
+
+background:#9ac13c;
+
+}
+
+nav .menu-header ul li ul li.current_page_item > a,
+nav .menu-header ul li ul li.current_page_item > a:hover,
+nav .menu-header ul li ul li.current-menu-ancestor > a,
+nav .menu-header ul li ul li.current-menu-item > a,
+nav .menu-header ul li ul li.current-menu-parent > a,
+nav .menu-header ul li ul li.current-menu-item:hover > a {
+	color: #fff;
+}
+	
+.abrir-nav,
+.abrir-nav-interna{
+	display: none;
+}
+
+/*=====SERVICES=======*/
+.service-box{
+	width: 30%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding: 1% 1.5%;
+}
+
+.bg-imagem-fundo{
+	background: url('../images/bg-imagem-fundo.png') center no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 600px;
+}

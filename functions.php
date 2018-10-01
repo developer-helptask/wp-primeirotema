@@ -1,9 +1,7 @@
 <?php
-//incluir outras function
-function ii_theme_styles(){
-	wp_enqueue_style('theme_css', get_template_directory_uri().'/assets/css/theme.css');
-	wp_enqueue_script('theme_js', get_template_directory_uri().'/assets/js/script.js', array('jquery'), '', true);
-}
+require get_template_directory().'/include/setup.php';
 //hooks
 //--Adiciona Css,Style etc.
-add_action('wp_enqueue_scripts', 'ii_theme_styles');
+add_action('wp_enqueue_scripts', 'ci_theme_styles');
+add_action('after_setup_theme', 'ci_after_setup');
+add_action('widgets_init', 'ci_widgets');
